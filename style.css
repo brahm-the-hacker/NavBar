@@ -1,0 +1,89 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background: url("./bg.webp") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Nav Bar */
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgb(51, 51, 51);
+    height: 8vh;
+    padding: 0rem 6rem;
+}
+#navBar #logo-left p {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#navBar #logo-left p span {
+    font-size: 2rem;
+    color: rgb(132, 0, 255);
+}
+#navBar #right {
+    display: flex;
+}
+#navBar #right #navMenu { 
+    display: flex;
+    align-items: center;
+}
+#navBar #right #navMenu li {
+    list-style: none;
+    margin: 0px 6px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 4px 10px;
+}
+#navBar #right #navMenu li:hover {
+    color: rgb(132, 0, 255);
+    border-bottom: 2px solid rgb(132, 0, 255);
+}
+#navBar #right #btn button{
+    border: none;
+    background-color: rgb(132, 0, 255);
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+/* Responsive - Tablet Design */
+@media (min-width: 768px) and (max-width: 1180px) {
+    #navBar {
+        height: 5vh;
+        padding: 0rem 2rem;
+    }
+    #navBar #logo-left p {
+        font-size: 1.2rem;
+    }
+    #navBar #logo-left p span {
+        font-size: 1.6rem;
+    }
+    #navBar #right #navMenu li {
+        margin: 0px 4px;
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+    #navBar #right #btn button{
+        padding: 8px 14px;
+        font-size: 10px;
+        margin-left: 1rem;
+    }
+}
